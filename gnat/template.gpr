@@ -10,8 +10,8 @@ project Template is
    type Library_Kind is ("static", "relocatable");
    Library_Type : Library_Kind := external ("LIBRARY_TYPE", "relocatable");
  
-   type Build_Kind is ("dev", "prod", "coverage");
-   Build_Mode : Build_Kind :=
+   type Project_Build_Kind is ("dev", "prod", "coverage");
+   Build_Mode : Project_Build_Kind :=
      external ("TEMPLATE_BUILD_MODE", external ("BUILD_MODE", "prod"));
 
    Version := "0.1";
